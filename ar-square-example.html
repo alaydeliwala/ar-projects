@@ -1,0 +1,22 @@
+<!-- An example of AR using a box -->
+<!-- Full explanation available at https://mw18.mwconf.org/paper/the-portarble-museum-developing-augmented-reality-for-the-web-using-ar-js/ -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Import the necessary ar scripts -->
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+</head>
+<body style='margin: 0px; overflow: hidden;'>
+    <a-scene embedded arjs=’sourceType: webcam;’>
+        <a-box position="0 0.5 -0.5" color="green" scale="1 0.5 1" rotation= "0 45 0" material='opacity: 0.9;'></a-box>
+        <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
+</body>
+</html>
